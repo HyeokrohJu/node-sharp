@@ -43,7 +43,7 @@ jobs:
         id: docker_build
         with:
           context: .
-          platforms: linux/amd64,linux/arm64,linux/s390x
+          platforms: linux/amd64,linux/arm64
           file: ./Dockerfile
           push: true
           tags: |
