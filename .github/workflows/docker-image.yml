@@ -1,4 +1,4 @@
-name: Local Nginx Docker
+name: Alpine Node18 Sharp Docker
 
 on:
   push:
