@@ -2,8 +2,10 @@ name: Alpine Node18 Sharp Docker
 
 on:
   push:
-    tags:
-      - 'v*'
+    branches:
+      - 'master'
+    # tags:
+    #   - 'v*'
 
 jobs:
   build:
@@ -41,7 +43,7 @@ jobs:
         id: docker_build
         with:
           context: .
-          platforms: linux/amd64,linux/arm64,linux/ppc64le,linux/s390x,linux/386,linux/arm/v7,linux/arm/v6
+          platforms: linux/amd64,linux/arm64,linux/ppc64le,linux/s390x,linux/arm/v7,linux/arm/v6
           file: ./Dockerfile
           push: true
           tags: |
