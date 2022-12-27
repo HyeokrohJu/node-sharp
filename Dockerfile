@@ -1,5 +1,5 @@
 #Dockerfile
-FROM node:18-alpine AS base
+FROM docker.io/library/node:18-alpine AS base
 
 RUN apk add --no-cache libc6-compat
 
